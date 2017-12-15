@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:ogrenciler xmlns:tns="http://www.w3.org/ogrenci" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org.com/ogrenci ogrenci.xsd ">
+  <ogrenci no="1">
+    <ad>faik</ad>
+    <soyad>turan</soyad>
+    <yas>40</yas>
+    <adres>
+      <il>istanbul</il>
+      <ilce>avcılar</ilce>
+    </adres>
+    <dersler>
+      <ders>matematik</ders>
+      <ders>fizik</ders>
+      <ders>kimya</ders>
+      <ders>edebiyat</ders>
+    </dersler>
+  </ogrenci>
+  <ogrenci no="2">
+    <ad>ali</ad>
+    <soyad>gel</soyad>
+    <yas>30</yas>
+    <adres>
+      <il>istanbul</il>
+      <ilce>pendik</ilce>
+    </adres>
+    <dersler>
+      <ders>matematik</ders>
+      <ders>fizik</ders>
+      <ders>kimya</ders>
+      <ders>edebiyat</ders>
+    </dersler>
+  </ogrenci>
+  <ogrenci no="3">
+    <ad>veli</ad>
+    <soyad>git</soyad>
+    <yas>35</yas>
+    <adres>
+      <il>istanbul</il>
+      <ilce>kadıköy</ilce>
+    </adres>
+    <dersler>
+      <ders>matematik</ders>
+      <ders>fizik</ders>
+      <ders>kimya</ders>
+      <ders>edebiyat</ders>
+    </dersler>
+  </ogrenci>
+  <ogrenci no="4">
+    <ad>ayşe</ad>
+    <soyad>koç</soyad>
+    <yas>25</yas>
+    <adres>
+      <il>istanbul</il>
+      <ilce>maltepe</ilce>
+    </adres>
+    <dersler>
+      <ders>matematik</ders>
+      <ders>fizik</ders>
+      <ders>kimya</ders>
+      <ders>edebiyat</ders>
+    </dersler>
+  </ogrenci>
+</tns:ogrenciler>

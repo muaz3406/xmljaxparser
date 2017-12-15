@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.w3.org.com/ogrenci" 
+	xmlns:tns="http://www.w3.org.com/ogrenci"
+	elementFormDefault="qualified">
+	<!-- adres complexType -->
+	<xs:complexType name="adresTipi">
+		<xs:sequence>
+		<xs:element name="il" type="xs:string"> </xs:element>
+		<xs:element name="ilce" type="xs:string"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- dersTipi -->
+	<xs:complexType name="dersler">
+	<xs:sequence>
+	<xs:element name="ders" type="xs:string" minOccurs="1" 
+	maxOccurs="100"></xs:element>
+	</xs:sequence>
+	</xs:complexType>
+	<!-- ogrenciTipi -->
+	<xs:complexType name="ogrenciTipi">
+	<xs:sequence>
+	<xs:element name="ad" type="xs:string"></xs:element>
+	<xs:element name="soyad" type="xs:string"></xs:element>
+	<xs:element name="yas" type="xs:byte"></xs:element>
+	<xs:element name="adres" type="tns:adresTipi"></xs:element>
+	<xs:element name="dersler" type="tns:dersler"></xs:element>
+	</xs:sequence>
+	<xs:attribute name="no" type="xs:integer"></xs:attribute>
+	</xs:complexType>
+	<!-- ogrenciletipi -->
+	<xs:complexType name="ogrencilerTipi">
+	<xs:sequence>
+	<xs:element name="ogrenci" type="tns:ogrenciTipi"
+	minOccurs="1" maxOccurs="100"></xs:element>
+	</xs:sequence>
+	</xs:complexType>
+<!-- root/ogrenciler eleman -->
+<xs:element name="ogrenciler" type="tns:ogrencilerTipi"></xs:element>
+ </xs:schema>
